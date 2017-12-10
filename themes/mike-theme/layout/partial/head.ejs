@@ -1,0 +1,14 @@
+<head>
+    <meta charset="<%- config.charset %>">
+    <% if(config.robots) { %><meta name="robots" content="<%- config.robots %>"><% } %>
+    <% if(config.author) { %><meta name="author" content="<%- config.author %>"><% } %>
+    <% if(config.content) { %><meta name="content" content="<%- config.content %>"><% } %>
+    <% if(config.keywords) { %><meta name="keywords" content="<%- config.keywords %>"><% } %>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title><%- config.title %> | <%- page.title %></title>
+    
+    <%- css('css/style') %>
+</head>

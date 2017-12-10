@@ -1,0 +1,14 @@
+<nav class="navbar">
+    <a class="navbar__title">
+        <%- config.title %>
+    </a>
+</nav>
+<header class="main-header">
+    <div class="main-header__background"></div>
+    <h1 class="main-header__title">
+        <%- page.title %>
+    </h1>
+    <p class="main-header__description">
+        <time datetime="<%- page.date %>" itemprop="dateCreated"><%- full_date(page.date, 'DD MMM YY HH[h] m[m]') %></time>
+    </p>
+</header>

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+@import './variables.css';
+* {
+  color: var(--color_primaryLight);
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', 'Open Sans', Arial, Helvetica;
+}
+
+body {
+  background-color: var(--color_secondaryDark);
+}
+
+.contact__link {
+  color: var(--color_secondaryLight);
+}
+
+.divisor {
+  text-align: center;
+  width: 100%;
+}
+.divisor::before,
+.divisor::after {
+  background: currentColor;
+  content: '';
+  display: inline-block;
+  margin: 10px 10px;
+  height: 2px;
+  width: 80px;
+  vertical-align: middle;
+}
+
+.main-content {
+  background-color: var(--color_secondaryDark);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 65vh;
+}
+
+.main-footer {
+  align-items: center;
+  color: var(--color_primaryAcent);
+  display: flex;
+  justify-content: space-around;
+  height: 3vh;
+}
+
+.navbar {
+  background-color: var(--color_primaryLight);
+  height: 3.5vh;
+  padding: 10px 15px;
+  position: fixed;
+  top: 0;
+  transition: all 0.4s ease-in;
+  width: 100vw;
+}
+.navbar.invisible {
+    background-color: var(--color_transparent);
+	top: -7vh;
+}
+.navbar.clear {
+  background-color: var(--color_transparent);
+}
+.navbar__title {
+  color: var(--color_secondaryDark);
+  font-size: 1.8em;
+  transition: all 0.4s ease-in;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.clear .navbar__title {
+  color: var(--color_primaryLight);
+}
+
+
+.main-header {
+  align-items: center;
+  display: flex;
+  height: 30vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-header__title {
+    font-size: 4.5em;
+    font-weight: bold;
+}
+
+.main-header__background {
+  background-attachment: fixed;
+  background-image: var(--image_header);
+  background-size: contain;
+
+  -webkit-filter: blur(10px) contrast(150%) saturate(50%);
+  -moz-filter: blur(10px) contrast(150%) saturate(50%);
+  -o-filter: blur(10px) contrast(150%) saturate(50%);
+  -ms-filter: blur(10px) contrast(150%) saturate(50%);
+  filter: blur(10px) contrast(150%) saturate(50%);
+
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.posts__container {
+  margin-top: 55px;
+  max-height: 500px;
+  min-height: 5vh;
+  overflow-y: scroll;
+  text-align: start;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.posts__head {
+  border-bottom: 1px solid;
+  position: absolute;
+  right: 30%;
+  left: 30%;
+  height: 50px;
+}
+.posts__head__title {
+  background-color: var(--color_primaryAcent);
+  padding: 5px 10px;
+  display: inline-block;
+}
+.posts__head__title:hover {
+  transition-delay: 0.4s;
+  font-size: 1.5em;
+  opacity: 0.8;
+  animation: bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-animation: bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-animation: bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.posts {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  width: 33.3%;
+}
+.posts-lasts {
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.posts-lasts__post {
+  align-items: center;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.posts-lasts__post:first-of-type {
+  margin-top: 10px;
+}
+
+.posts__link {
+  display: inline-block;
+  margin: 10px 0;
+  width: 100%;
+}
+
+@keyframes bounce {
+  from {
+    font-size: 1;
+    opacity: 1;
+  }
+  to {
+    font-size: 1.5em;
+    opacity: 0.8;
+  }
+}
+
+@-moz-keyframes bounce {
+  from {
+    font-size: 1;
+    opacity: 1;
+  }
+  to {
+    font-size: 1.5em;
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    font-size: 1;
+    opacity: 1;
+  }
+  to {
+    font-size: 1.5em;
+    opacity: 0.8;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .posts-lasts__post {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .posts-lasts__post {
+    width: 85%;
+  }
+  .main-header {
+    height: 20vh;
+  }
+  .divisor {
+    margin: 20px 0;
+  }
+  .posts {
+    width: 100%;
+  }
+  .main-content {
+    height: initial;
+  }
+  .posts__container {
+    max-height: 25vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 10vh;
+  }
+  .contact {
+    width: 100%;
+    text-align: center;
+  }
+}
