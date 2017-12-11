@@ -10,7 +10,8 @@ keywords: Frontend Weekly, Javascript, HTML, CSS, frontend, weekly
 content: Aprendizado semanal sobre temas de frontend e boas praticas.
 author: codermarcoos
 language: pt
-timezone:
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -60,13 +61,6 @@ default_category: uncategorized
 category_map:
 tag_map:
 
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
-
 # Pagination
 ## Set per_page to 0 to disable pagination
 per_page: 10
@@ -75,7 +69,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: mike-theme
+theme: dev-dark-theme
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

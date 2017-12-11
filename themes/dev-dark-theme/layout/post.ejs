@@ -1,0 +1,13 @@
+<%- partial('partial/post/header') %>
+<main class="main-content">
+    <section class="tags">
+        <div class="tags__container">
+        <% page.tags.forEach((tag) => { %> 
+            <a class="tags__tag" href="/tags/<%- tag.name %>"><%- tag.name %></a>         
+        <% }) %>
+        </div>
+    </section>
+    <div class="main-content__container markdown">
+        <%- page.content %>
+    </div>
+</main>

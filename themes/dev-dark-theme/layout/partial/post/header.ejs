@@ -1,0 +1,18 @@
+<nav class="navbar clear">
+    <a href="/" class="navbar__title">
+        <%- config.title %>
+    </a>
+</nav>
+<header class="main-header">
+    <div class="main-header__background"></div>
+    <div class="main-header__container">        
+        <h1 class="main-header__title">
+            <%- page.title %>
+        </h1>
+        <p class="main-header__container__description">
+            <a class="description__category" href="/categories/<%- url_categories(page.categories) %>"><%- first_category(page.categories) %></a>
+            <br>
+            <time class="description__day" datetime="<%- page.date %>" itemprop="dateCreated"><%- full_date(page.date, 'DD MMM YY HH[h] m[m]') %></time>        
+        </p>
+    </div>
+</header>

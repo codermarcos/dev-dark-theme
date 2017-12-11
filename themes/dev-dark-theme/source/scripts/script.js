@@ -1,6 +1,6 @@
 window.app = () => {
   let pageY = 0;
-  let header = document.getElementsByClassName('main-header--collected')[0];
+  let header = document.getElementsByClassName('navbar')[0];
 
   window.onscroll = e => {
     if (e.pageY === 0) {

@@ -1,0 +1,32 @@
+<%- partial('partial/header', { title: config.title, description: config.content }) %>
+<main class="main-content">
+    <section class="posts">
+        <a class="posts__head" title="Ultimos posts">            
+            <h3 class="posts__head__title">Lasts</h3>
+        </a>
+        <div class="posts__container">
+        <% site.posts.forEach((post) => { %>
+            <%- partial('partial/post-item', { title: post.title, datetime: post.date, categories: post.categories, description: post.description, lang: post.lang }) %>
+        <% }) %>
+        </div>
+    </section>
+
+    <h5 class="divisor">ASSUNTOS</h5>
+
+    <% site.categories.forEach((category) => { %>
+    <section class="posts">
+        <a class="posts__head" href="categories/<%- url_title(category.name) %>" title="Posts sobre <%- category.name %>">
+            <h3 class="posts__head__title">
+                <%- category.name %>
+            </h3>
+        </a>
+        <div class="posts__container">
+            <% site.categories.findOne({ name: category.name }).posts.sort('date', -1).each((post) => { %>
+            <a class="posts__link" href="<%- post.lang %>/<%- url_categories(post.categories) %>/<%- url_title(post.title) %>" title="<%- post.description %>">
+                <%- post.title %>
+            </a>
+            <% }) %>
+        </div>
+    </section>
+    <% }) %>
+</main>

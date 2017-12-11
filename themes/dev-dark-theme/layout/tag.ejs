@@ -1,0 +1,15 @@
+<%- partial('partial/tag/header') %>
+<main class="main-content">
+    <section class="tags">
+        <div class="tags__container">
+        <% site.tags.forEach((tag) => { %> 
+            <a class="tags__tag" href="/tags/<%- tag.name %>"><%- tag.name %></a>         
+        <% }) %>
+        </div>
+    </section>
+    <section class="posts">
+        <% site.tags.findOne({ name: page.tag }).posts.sort('date', -1).each((post) => { %>        
+            <%- partial('partial/post-item', { title: post.title, datetime: post.date, categories: post.categories, description: post.description, lang: post.lang }) %>
+        <% }) %>
+    </section>
+</main>
