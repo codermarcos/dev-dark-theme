@@ -1,5 +1,13 @@
 <%- partial('partial/post/header') %>
 <main class="main-content">
+    <div class="main-content__container markdown">
+        <%- page.content %>
+    </div>
+
+    <% if (page.tags.length > 0) { %>
+        
+    <h5 class="divisor">TAGS</h5>
+
     <section class="tags">
         <div class="tags__container">
         <% page.tags.forEach((tag) => { %> 
@@ -7,7 +15,6 @@
         <% }) %>
         </div>
     </section>
-    <div class="main-content__container markdown">
-        <%- page.content %>
-    </div>
+
+    <% } %>
 </main>

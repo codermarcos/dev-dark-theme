@@ -1,5 +1,12 @@
 <%- partial('partial/category/header') %>
 <main class="main-content">
+    <section class="categories">
+        <div class="categories__container">
+        <% site.categories.forEach((category) => { %> 
+            <a class="categories__category" href="/categories/<%- category.name %>"><%- category.name %></a>         
+        <% }) %>
+        </div>
+    </section>
     <section class="posts">
         <% site.categories.findOne({ name: page.category }).posts.sort('date', -1).each((post) => { %>        
             <%- partial('partial/post-item', { title: post.title, datetime: post.date, categories: post.categories, description: post.description, lang: post.lang }) %>

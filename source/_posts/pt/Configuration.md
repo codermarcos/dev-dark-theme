@@ -25,11 +25,13 @@ And inner **themes** > **dev-dark-theme** > **config.yml**
 analitycs: # Your analitycs code 
 favicon: # Your favicon path
 twitter: # Twitter link
-google: # Gmail 
 github: # Github username
 facebook: # Facebook link
 instagram: # Instagram link
+linkedin: # Linkedin link
 youtube: # Youtube link
+whatsapp: # Link telto your phone number or Link to whatsapp
+gmail: # Link mailto your gmail
 ```
 
 ### Personalization 

@@ -118,16 +118,23 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
-.posts__container {
-  margin-top: 55px;
-  max-height: 285px;
-  min-height: 5vh;
-  overflow-y: scroll;
-  text-align: center;
-  margin-left: 17px;
+.pagination {
+	margin-top: 25px;
+	font-size: 1.5em;
+	color: var(--color_secondaryMiddle);
 }
-
+.pagination__link {
+	margin: 0 5px;
+	vertical-align: middle;
+  transition: all .5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+.pagination__link:hover {
+	color: var(--color_primaryAcent);
+}
+.pagination__link--prev, 
+.pagination__link--next {
+	font-size: 2.5em;
+}
 .posts__head {
   border-bottom: 1px solid;
   position: absolute;
@@ -149,23 +156,18 @@ body {
   -webkit-animation: bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .posts {
-  padding: 15px 0;
   position: relative;
   text-align: center;
-  margin: 0 auto;
   flex-basis: 33.3%;
 }
 .posts__post {
-  align-items: center;
   border: 1px solid;
   border-radius: 3.5px;
   display: flex;
-  margin: 0 auto 20px;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 65%;
   font-size: 0.8em;
-  padding: 10px;
+  margin-top: 20px; 
+  padding: 10px 0;
   transition: border-color 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .posts__post:hover {
@@ -191,6 +193,7 @@ body {
   color: var(--color_primaryAcent);
 }
 
+.categories,
 .tags {
 	width: 100%;
 	height: 70px;
@@ -199,21 +202,44 @@ body {
 	justify-content: center;
 }
 
+.categories__container, 
 .tags__container {
-  line-height: 33px;
-  margin: 0 auto;
-  height: 50px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  width: 45%;
-  white-space: nowrap;
+	height: 65px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 33.3%;
+  display: flex;
+  justify-content: space-between;
+	align-items: center;
 }
 
+.categories__category,
 .tags__tag {
   background-color: var(--color_primaryAcent);
   padding: 5px 10px;
   border-radius: 50px;
 }
+.categories__category:hover,
+.tags__tag:hover {
+	transition-delay: 0.4s;
+	font-size: 1.5em;
+	opacity: 0.8;
+	animation: bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-moz-animation: bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-webkit-animation: bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.icon__svg {
+  fill: var(--color_primaryLight);
+}
+
+
 
 @keyframes bounce {
   from {
