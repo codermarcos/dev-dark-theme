@@ -40,7 +40,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: 65vh;
+  height: 60vh;
 }
 
 .main-content__container {
@@ -135,26 +135,6 @@ body {
 .pagination__link--next {
 	font-size: 2.5em;
 }
-.posts__head {
-  border-bottom: 1px solid;
-  position: absolute;
-  right: 30%;
-  left: 30%;
-  height: 50px;
-}
-.posts__head__title {
-  background-color: var(--color_primaryAcent);
-  padding: 5px 10px;
-  display: inline-block;
-}
-.posts__head__title:hover {
-  transition-delay: 0.4s;
-  font-size: 1.5em;
-  opacity: 0.8;
-  animation: bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-animation: bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-animation: bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
 .posts {
   position: relative;
   text-align: center;
@@ -223,23 +203,68 @@ body {
 .tags__tag:hover {
 	transition-delay: 0.4s;
 	font-size: 1.5em;
-	opacity: 0.8;
-	animation: bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-	-moz-animation: bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-	-webkit-animation: bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.icon {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
+  opacity: 0.8;
+  transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .icon__svg {
-  fill: var(--color_primaryLight);
+  fill: var(--color_primaryLight);    
+  width: 48px;
+  height: 48px;  
+  transition: all .5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  -moz-transition: all .5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  -webkit-transition: all .5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+.icon__svg:hover {
+  fill: var(--color_primaryAcent);
+  width: 64px;
+  height: 64px;
+  opacity: 0.8;
+	animation: size 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-moz-animation: size 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-webkit-animation: size 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+@keyframes size {
+  from {
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+  }
+  to {
+    width: 64px;
+    height: 64px;
+    opacity: 0.8;
+  }
+}
 
+@-moz-keyframes size {
+  from {
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+  }
+  to {
+    width: 64px;
+    height: 64px;
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes size {
+  from {
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+  }
+  to {
+    width: 64px;
+    height: 64px;
+    opacity: 0.8;
+  }
+}
 
 @keyframes bounce {
   from {
