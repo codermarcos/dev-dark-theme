@@ -1,11 +1,6 @@
-<nav class="navbar clear">
-    <a href="/" class="navbar__title">
-        <%- config.title %>
-    </a>
-</nav>
+<%- partial('partial/nav-header') %>
 <header class="main-header">
     <div class="main-header__background"></div>
-    <h1 class="main-header__title">
-        <%- page.tag %>
-    </h1>
+    <h1 class="main-header__title" itemprop="name">
+        <%- page.tag %></h1>
 </header>

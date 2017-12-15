@@ -2,8 +2,9 @@
 <html lang="<%- config.language %>">
 
 <%- partial('partial/head') %>
-<body>
+<body itemscope itemprop="blogPost">
     <%- body %>
     <%- js('scripts/script') %>
+    <%- partial('partial/analitycs') %>
 </body>
 </html>

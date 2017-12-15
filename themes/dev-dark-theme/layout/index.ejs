@@ -1,28 +1,47 @@
-<%- partial('partial/header', { title: config.title, description: config.content }) %>
+<%- partial('partial/header', { 
+    title: config.title, 
+    description: config.content 
+}) %>
 <main class="main-content">
     <section class="categories">
         <div class="categories__container">
         <% site.categories.forEach((category) => { %> 
-            <a class="categories__category" href="/categories/<%- category.name %>"><%- category.name %></a>         
+            <a 
+            class="categories__category" 
+            href="/categories/<%- category.name %>"><%- category.name %></a>         
         <% }) %>
         </div>
     </section>
 
-    <h5 class="divisor">LASTS</h5>
+    <h5 class="divisor"><%= __('lasts') %></h5>
     
     <section class="posts">
         <% page.posts.forEach((post) => { %>
-            <%- partial('partial/post-item', { title: post.title, datetime: post.date, categories: post.categories, description: post.description, lang: post.lang }) %>
+            <%- partial('partial/post-item', { 
+                title: post.title, 
+                datetime: post.date, 
+                categories: post.categories, 
+                description: post.description, 
+                lang: post.lang 
+            }) %>
         <% }) %>
 
         <nav class="pagination" >
-            <a class="pagination__link pagination__link--prev" href="/<%- page.prev_link %>"><</a>
-            <a class="pagination__link" href="/"><%- 1 %></a> 
+            <a 
+                class="pagination__link pagination__link--prev" 
+                href="/<%- page.prev_link %>"><</a>
+            <a 
+                class="pagination__link" 
+                href="/"><%- 1 %></a> 
             ...
             <%- page.current %>
             ...
-            <a class="pagination__link" href="/lasts/<%- page.total %>"><%- page.total %></a>
-            <a class="pagination__link pagination__link--next" href="/<%- page.next_link %>">></a>
+            <a 
+                class="pagination__link" 
+                href="/lasts/<%- page.total %>"><%- page.total %></a>
+            <a 
+                class="pagination__link pagination__link--next" 
+                href="/<%- page.next_link %>">></a>
         </nav>
     </section>
 </main>

@@ -1,14 +1,26 @@
 <head>
     <meta charset="<%- config.charset %>">
-    <% if(config.robots) { %><meta name="robots" content="<%- config.robots %>"><% } %>
-    <% if(config.author) { %><meta name="author" content="<%- config.author %>"><% } %>
-    <% if(config.content) { %><meta name="content" content="<%- config.content %>"><% } %>
-    <% if(config.keywords) { %><meta name="keywords" content="<%- config.keywords %>"><% } %>
+    <% if(theme.favicon) { %>
+        <link rel="icon" href="<%- theme.favicon %>"><% } %>
+    <% if(config.robots) { %>
+        <meta name="robots" content="<%- config.robots %>"><% } %>
+    <% if(config.author) { %>
+        <meta name="author" content="<%- config.author %>"><% } %>
+    <% if(config.content) { %>
+        <meta name="content" content="<%- config.content %>"><% } %>
+    <% if(config.keywords) { %>
+        <meta name="keywords" content="<%- config.keywords %>"><% } %>
+    <% if(theme.rss) { %>
+        <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml"><% } %>
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title><%- config.title %> | <%- page.title %></title>
+    <%
+    var title = page.title;
+    if (is_tag()) title = page.tag;
+    if (is_category()) title = page.category;
+    %>
+    <title><%- config.title %><% if (title) { %> | <%= title %><% } %></title>
     
     <%- css('css/style') %>
 </head>

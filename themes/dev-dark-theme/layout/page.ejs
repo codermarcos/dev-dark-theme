@@ -1,1 +1,23 @@
-<h1>This is a page</h1>
+<%- partial('partial/post/header') %>
+<main class="main-content">
+    <div 
+        class="main-content__container markdown" 
+        itemprop="articleBody">
+        <%- page.content %></div>
+        
+    <% if (page.tags.length > 0) { %>        
+
+        <h5 class="divisor"><%= __('tags') %></h5>
+        <section class="tags">
+            <div class="tags__container">
+                <% page.tags.forEach((tag) => { %> 
+                    <a 
+                        class="tags__tag" 
+                        href="/tags/<%- tag.name %>"
+                        tilte="<%= __('tag') %>"><%- tag.name %></a>         
+                <% }) %>
+            </div>
+        </section>
+
+    <% } %>
+</main>

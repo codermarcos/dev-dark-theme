@@ -126,7 +126,7 @@ body {
 .pagination__link {
 	margin: 0 5px;
 	vertical-align: middle;
-  transition: all .5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  transition: all .2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
 }
 .pagination__link:hover {
 	color: var(--color_primaryAcent);
@@ -204,27 +204,39 @@ body {
 	transition-delay: 0.4s;
 	font-size: 1.5em;
   opacity: 0.8;
-  transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.icon {
+  text-align: center;
+  display: inline-block;
+  transition: all .4s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  -moz-transition: all .4s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  -webkit-transition: all .4s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+
+.icon:hover {
+  width: 64px;
+  height: 64px;
+  opacity: 0.8;
+  vertical-align: bottom;
+	animation: size 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-moz-animation: size 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-webkit-animation: size 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.icon:hover .icon__svg {
+  fill: var(--color_primaryAcent);
 }
 
 .icon__svg {
   fill: var(--color_primaryLight);    
   width: 48px;
   height: 48px;  
-  transition: all .5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
-  -moz-transition: all .5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
-  -webkit-transition: all .5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
-}
-.icon__svg:hover {
-  fill: var(--color_primaryAcent);
-  width: 64px;
-  height: 64px;
-  opacity: 0.8;
-	animation: size 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-	-moz-animation: size 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-	-webkit-animation: size 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all .4s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  -moz-transition: all .4s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  -webkit-transition: all .4s cubic-bezier(0.755, 0.05, 0.855, 0.06);
 }
 
 @keyframes size {

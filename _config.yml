@@ -3,12 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Frontend Weekly
+title: Dev Dark Theme
+
+# meta tags
 charset: utf-8
 robots: index, follow
-keywords: Frontend Weekly, Javascript, HTML, CSS, frontend, weekly
-content: Aprendizado semanal sobre temas de frontend e boas praticas.
+keywords: Dev-Dark-Theme, DevDarkTheme, Hexo, Theme, Dev, Dark, Theme
+content: The dev dark theme is a theme developed by Marcos Gonçalves(codermarcos) using hexo.
 author: codermarcoos
+
+# Locale
 language: pt
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
@@ -74,4 +78,8 @@ theme: dev-dark-theme
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/codermarcos/dev-dark-theme
+  branch: master
+  message: "Deploy theme: {{ now('YYYY-MM-DD HH:mm:ss') }})"
+  extend_dirs: docs
