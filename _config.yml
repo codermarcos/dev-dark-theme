@@ -82,4 +82,3 @@ deploy:
   repo: https://github.com/codermarcos/dev-dark-theme
   branch: master
   message: "Deploy theme: {{ now('YYYY-MM-DD HH:mm:ss') }})"
-  extend_dirs: docs
