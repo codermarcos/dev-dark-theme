@@ -80,5 +80,5 @@ theme: dev-dark-theme
 deploy:
   type: git
   repo: https://github.com/codermarcos/dev-dark-theme
-  branch: master
+  branch: gh-pages
   message: "Deploy theme: {{ now('YYYY-MM-DD HH:mm:ss') }})"

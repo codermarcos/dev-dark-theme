@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 lang: pt
-date: 2017-12-11 02:26:11
+date: 2017-12-10 00:40:00
 description: Tutorial how to use this theme
 tags: [Installation, Run, Publish]
 categories: 
@@ -34,3 +34,6 @@ To publish your project use this
 ```shell
 hexo generate 
 ```
+
+### Using
+To make post, page or draft read [using Dev Dark Theme](/pt/HowTo/Using-Dev-Dark-Theme)

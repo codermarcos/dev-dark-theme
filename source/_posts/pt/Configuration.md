@@ -1,7 +1,7 @@
 ---
 title: Configuration
 lang: pt
-date: 2017-12-11 02:28:11
+date: 2017-12-10 00:30:00
 description: How to customise this theme
 tags: [Personalization, Colors, Settings]
 categories:
@@ -49,3 +49,5 @@ Inner **themes** > **dev-dark-theme** > **source** > **css** > **variables.css**
   --image_header: url('../images/header.jpg');
 }
 ```
+
+To make post, page or draft read [using Dev Dark Theme](/pt/HowTo/Using-Dev-Dark-Theme)
