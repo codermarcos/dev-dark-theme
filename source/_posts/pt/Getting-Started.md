@@ -16,7 +16,7 @@ npm i hexo-cli -g
 ```
 Then use this to clone a theme 
 ```shell
-git clone https://github.com/codermarcos/learn-pages.git
+git clone https://github.com/codermarcos/dev-dark-theme.git
 ```
 Next enter in repository to follow next steps
 
