@@ -29,19 +29,23 @@
         <nav class="pagination" >
             <a 
                 class="pagination__link pagination__link--prev" 
-                href="/<%- page.prev_link %>"><</a>
+                href="/<%- page.prev_link %>"
+                title="Previous"><</a>
             <a 
                 class="pagination__link" 
-                href="/"><%- 1 %></a> 
+                href="/"
+                title="First"><%- 1 %></a> 
             ...
             <%- page.current %>
             ...
             <a 
                 class="pagination__link" 
-                href="/lasts/<%- page.total %>"><%- page.total %></a>
+                href="/lasts/<%- page.total %>"                
+                title="Last"><%- page.total %></a>
             <a 
                 class="pagination__link pagination__link--next" 
-                href="/<%- page.next_link %>">></a>
+                href="/<%- page.next_link %>"
+                title="Next">></a>
         </nav>
     </section>
 </main>
