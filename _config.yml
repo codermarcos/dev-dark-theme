@@ -57,7 +57,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 3
+  per_page: 4
   order_by: -date
   
 # Category & Tag
@@ -67,7 +67,7 @@ tag_map:
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 3
+per_page: 4
 pagination_dir: lasts
 
 # Extensions
