@@ -1,7 +1,7 @@
 <article class="posts__post">
     <a 
         class="posts__post__title" 
-        href="/<%- lang %>/<%- url_categories(categories) %>/<%- url_title(title) %>"
+        href="/<%- lang %>/<%- url_data(categories) %>/<%- url_title(title) %>"
         itemprop="url"
         target="_blank"
         title="<%- description %>">
@@ -10,9 +10,9 @@
     </a>
     <a 
         class="posts__post__category" 
-        href="categories/<%- url_categories(categories) %>"
+        href="categories/<%- url_data(categories) %>"
         title="<%= __('category') %>">
-        <%- first_category(categories) %></a>
+        <%- first_data(categories) %></a>
     <time 
         class="posts__post__day" 
         datetime="<%- date(datetime, 'YYYY-MM-DD') %>" 

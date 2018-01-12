@@ -8,7 +8,7 @@
         <% site.categories.forEach((category) => { %> 
             <a 
             class="categories__category" 
-            href="/categories/<%- category.name.toLowerCase() %>"><%- category.name %></a>         
+            href="/categories/<%- url_title(category.name) %>"><%- category.name %></a>         
         <% }) %>
         </div>
     </section>

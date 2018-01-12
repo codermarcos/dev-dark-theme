@@ -13,7 +13,7 @@
                 <% page.tags.forEach((tag) => { %> 
                     <a 
                         class="tags__tag" 
-                        href="/tags/<%- tag.name.toLowerCase() %>"
+                        href="/tags/<%- url_title(tag.name) %>"
                         tilte="<%= __('tag') %>"><%- tag.name %></a>         
                 <% }) %>
             </div>
