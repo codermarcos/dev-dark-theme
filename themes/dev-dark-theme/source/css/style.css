@@ -52,8 +52,6 @@ body {
   color: var(--color_primaryAcent);
   display: flex;
   justify-content: space-around;
-  position: relative;
-  bottom: 0;
 }
 
 .navbar {
