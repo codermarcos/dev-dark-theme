@@ -14,5 +14,5 @@ hexo.extend.helper.register('first_category', args => {
 });
 hexo.extend.helper.register('url_title', args => {
   let original = args;
-  return original.replace(new RegExp(' ', 'g'), '-');
+  return original.replace(new RegExp(' ', 'g'), '-').toLowerCase();
 });
