@@ -1,4 +1,4 @@
-# dev-dark-theme
+# Dev Dark Theme
 ![Screenshot](https://raw.githubusercontent.com/codermarcos/dev-dark-theme/assets/Dev-Dark-Theme.png)
 
 The dev dark theme is a theme developed using hexo. [View demo](http://dev-dark-theme.codermarcos.com/)
