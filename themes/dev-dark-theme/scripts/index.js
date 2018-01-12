@@ -12,5 +12,5 @@ hexo.extend.helper.register('first_data', args => {
   return data.replace(new RegExp(' ', 'g'), '-').toLowerCase();
 });
 hexo.extend.helper.register('url_title', args => {
-  return args.replace(new RegExp(' ', 'g'), '-').toLowerCase();
+  return args.replace(new RegExp(' ', 'g'), '-');
 });
