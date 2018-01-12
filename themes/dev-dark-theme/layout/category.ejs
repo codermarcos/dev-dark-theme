@@ -5,7 +5,7 @@
             <% site.categories.forEach((category) => { %> 
                 <a 
                     class="categories__category" 
-                    href="/categories/<%- url_title(category.name)) %>"
+                    href="/categories/<%- url_title(category.name) %>"
                     tilte="<%= __('category') %>"><%- category.name %></a>         
             <% }) %>
         </div>
