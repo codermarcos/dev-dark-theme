@@ -1,0 +1,11 @@
+:root {
+  /* COLORS */
+  --color_primaryLight: #fffff7;
+  --color_primaryAcent: #c0392b;
+  --color_secondaryDark: #282830;
+  --color_secondaryMiddle: #abb2bf;
+  --color_secondaryLight: #60646d;
+  --color_transparent: transparent;
+  /* IMAGES */
+  --image_header: url('../images/header.jpg');
+}

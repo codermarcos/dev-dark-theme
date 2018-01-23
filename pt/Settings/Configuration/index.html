@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    
+        <link rel="icon" href="/favicon.png">
+    
+        <meta name="robots" content="index, follow">
+    
+        <meta name="author" content="codermarcos">
+    
+        <meta name="content" content="The dev dark theme is a theme developed by Marcos Gonçalves(codermarcos) using hexo.">
+    
+        <meta name="keywords" content="Dev-Dark-Theme, DevDarkTheme, Hexo, Theme, Dev, Dark, Theme">
+    
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dev Dark Theme | Configuration</title>
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body itemscope itemprop="blogPost">
+    <nav class="navbar clear">
+    <a 
+        href="/" 
+        class="navbar__title"
+        title="Go to home">
+        Dev Dark Theme</a>
+</nav>
+<header class="main-header">
+    <div class="main-header__background"></div>
+    <div class="main-header__container">        
+        <h1 class="main-header__title" itemprop="name">
+            Configuration</h1>
+        <p class="main-header__container__description">
+            <a 
+                class="description__category" 
+                href="/categories/Settings"
+                tilte="Categoria">Settings</a>
+            <br>
+            <time 
+                class="description__day" 
+                datetime="2017-12-10" 
+                title="Puclicado em 10 dez 2017"
+                itemprop="datePublished">10 dez 17 00h 30m</time>        
+        </p>
+    </div>
+</header>
+<main class="main-content">
+    <div 
+        class="main-content__container markdown" 
+        itemprop="articleBody">
+        <h2 id="Configuration-theme"><a href="#Configuration-theme" class="headerlink" title="Configuration theme"></a>Configuration theme</h2><p>This theme has some configutarions pre-defined in <strong>_config.yml</strong><br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="comment"># Title of the site</span></span><br><span class="line"><span class="attr">charset:</span> <span class="comment"># Charset of the site</span></span><br><span class="line"><span class="attr">robots:</span> <span class="comment"># Content of the meta tag robots</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="comment"># Content of the meta tag keywords</span></span><br><span class="line"><span class="attr">content:</span> <span class="comment"># Content of the meta tag description </span></span><br><span class="line"><span class="attr">author:</span> <span class="comment"># Name or Nickname of the site author</span></span><br><span class="line"><span class="attr">language:</span> <span class="comment"># Your language</span></span><br></pre></td></tr></table></figure></p>
+<p>And inner <strong>themes</strong> &gt; <strong>dev-dark-theme</strong> &gt; <strong>config.yml</strong><br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Miscellaneous</span></span><br><span class="line"><span class="attr">analitycs:</span> <span class="comment"># Your analitycs code </span></span><br><span class="line"><span class="attr">favicon:</span> <span class="comment"># Your favicon path</span></span><br><span class="line"><span class="attr">twitter:</span> <span class="comment"># Twitter link</span></span><br><span class="line"><span class="attr">github:</span> <span class="comment"># Github username</span></span><br><span class="line"><span class="attr">facebook:</span> <span class="comment"># Facebook link</span></span><br><span class="line"><span class="attr">instagram:</span> <span class="comment"># Instagram link</span></span><br><span class="line"><span class="attr">linkedin:</span> <span class="comment"># Linkedin link</span></span><br><span class="line"><span class="attr">youtube:</span> <span class="comment"># Youtube link</span></span><br><span class="line"><span class="attr">whatsapp:</span> <span class="comment"># Link telto your phone number or Link to whatsapp</span></span><br><span class="line"><span class="attr">gmail:</span> <span class="comment"># Link mailto your gmail</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="Personalization"><a href="#Personalization" class="headerlink" title="Personalization"></a>Personalization</h3><p>Inner <strong>themes</strong> &gt; <strong>dev-dark-theme</strong> &gt; <strong>source</strong> &gt; <strong>css</strong> &gt; <strong>variables.css</strong> has the colors and images background of the theme<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span> &#123;</span><br><span class="line">  <span class="comment">/* COLORS */</span></span><br><span class="line">  <span class="attribute">--color_primaryLight</span>: <span class="number">#fffff7</span>;</span><br><span class="line">  <span class="attribute">--color_primaryAcent</span>: <span class="number">#c0392b</span>;</span><br><span class="line">  <span class="attribute">--color_secondaryDark</span>: <span class="number">#282830</span>;</span><br><span class="line">  <span class="attribute">--color_secondaryMiddle</span>: <span class="number">#abb2bf</span>;</span><br><span class="line">  <span class="attribute">--color_secondaryLight</span>: <span class="number">#60646d</span>;</span><br><span class="line">  <span class="attribute">--color_transparent</span>: transparent;</span><br><span class="line">  <span class="comment">/* IMAGES */</span></span><br><span class="line">  <span class="attribute">--image_header</span>: <span class="built_in">url</span>(<span class="string">'../images/header.jpg'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>To make post, page or draft read <a href="/pt/HowTo/Using-Dev-Dark-Theme">using Dev Dark Theme</a></p>
+</div>
+
+            
+
+        <h5 class="divisor">Tags</h5>
+        <section class="tags">
+            <div class="tags__container">
+             
+                <a 
+                    class="tags__tag" 
+                    href="/tags/Personalization"
+                    tilte="Tag">Personalization</a>         
+             
+                <a 
+                    class="tags__tag" 
+                    href="/tags/Colors"
+                    tilte="Tag">Colors</a>         
+             
+                <a 
+                    class="tags__tag" 
+                    href="/tags/Settings"
+                    tilte="Tag">Settings</a>         
+            
+            </div>
+        </section>
+
+    
+</main>
+    <script src="/scripts/script.js"></script>
+    
+</body>
+</html>
