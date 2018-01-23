@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Dev Dark Theme</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://dev-dark-theme.codermarcos.com/"/>
+  <updated>2018-01-23T11:42:09.140Z</updated>
+  <id>http://dev-dark-theme.codermarcos.com/</id>
+  
+  <author>
+    <name>codermarcos</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>About Theme</title>
+    <link href="http://dev-dark-theme.codermarcos.com/pt/Theme/About-Theme/"/>
+    <id>http://dev-dark-theme.codermarcos.com/pt/Theme/About-Theme/</id>
+    <published>2017-12-10T02:50:00.000Z</published>
+    <updated>2018-01-23T11:42:09.140Z</updated>
+    
+    <summary type="html">
+    
+      Informations about this theme
+    
+    </summary>
+    
+      <category term="Theme" scheme="http://dev-dark-theme.codermarcos.com/categories/Theme/"/>
+    
+    
+      <category term="Informations" scheme="http://dev-dark-theme.codermarcos.com/tags/Informations/"/>
+    
+      <category term="Questions" scheme="http://dev-dark-theme.codermarcos.com/tags/Questions/"/>
+    
+      <category term="Doubt" scheme="http://dev-dark-theme.codermarcos.com/tags/Doubt/"/>
+    
+      <category term="Contact" scheme="http://dev-dark-theme.codermarcos.com/tags/Contact/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>About Theme</title>
+    <link href="http://dev-dark-theme.codermarcos.com/pt/Theme/about-theme/"/>
+    <id>http://dev-dark-theme.codermarcos.com/pt/Theme/about-theme/</id>
+    <published>2017-12-10T02:50:00.000Z</published>
+    <updated>2018-01-23T11:42:09.140Z</updated>
+    
+    <summary type="html">
+    
+      Informations about this theme
+    
+    </summary>
+    
+      <category term="Theme" scheme="http://dev-dark-theme.codermarcos.com/categories/Theme/"/>
+    
+    
+      <category term="Informations" scheme="http://dev-dark-theme.codermarcos.com/tags/Informations/"/>
+    
+      <category term="Questions" scheme="http://dev-dark-theme.codermarcos.com/tags/Questions/"/>
+    
+      <category term="Doubt" scheme="http://dev-dark-theme.codermarcos.com/tags/Doubt/"/>
+    
+      <category term="Contact" scheme="http://dev-dark-theme.codermarcos.com/tags/Contact/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Getting Started</title>
+    <link href="http://dev-dark-theme.codermarcos.com/pt/HowTo/Getting-Started/"/>
+    <id>http://dev-dark-theme.codermarcos.com/pt/HowTo/Getting-Started/</id>
+    <published>2017-12-10T02:40:00.000Z</published>
+    <updated>2018-01-23T11:42:09.140Z</updated>
+    
+    <summary type="html">
+    
+      Tutorial how to use this theme
+    
+    </summary>
+    
+      <category term="HowTo" scheme="http://dev-dark-theme.codermarcos.com/categories/HowTo/"/>
+    
+    
+      <category term="Installation" scheme="http://dev-dark-theme.codermarcos.com/tags/Installation/"/>
+    
+      <category term="Run" scheme="http://dev-dark-theme.codermarcos.com/tags/Run/"/>
+    
+      <category term="Publish" scheme="http://dev-dark-theme.codermarcos.com/tags/Publish/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Getting Started</title>
+    <link href="http://dev-dark-theme.codermarcos.com/pt/HowTo/getting-started/"/>
+    <id>http://dev-dark-theme.codermarcos.com/pt/HowTo/getting-started/</id>
+    <published>2017-12-10T02:40:00.000Z</published>
+    <updated>2018-01-23T11:42:09.163Z</updated>
+    
+    <summary type="html">
+    
+      Tutorial how to use this theme
+    
+    </summary>
+    
+      <category term="HowTo" scheme="http://dev-dark-theme.codermarcos.com/categories/HowTo/"/>
+    
+    
+      <category term="Installation" scheme="http://dev-dark-theme.codermarcos.com/tags/Installation/"/>
+    
+      <category term="Run" scheme="http://dev-dark-theme.codermarcos.com/tags/Run/"/>
+    
+      <category term="Publish" scheme="http://dev-dark-theme.codermarcos.com/tags/Publish/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Configuration</title>
+    <link href="http://dev-dark-theme.codermarcos.com/pt/Settings/Configuration/"/>
+    <id>http://dev-dark-theme.codermarcos.com/pt/Settings/Configuration/</id>
+    <published>2017-12-10T02:30:00.000Z</published>
+    <updated>2018-01-10T13:56:05.665Z</updated>
+    
+    <summary type="html">
+    
+      How to customise this theme
+    
+    </summary>
+    
+      <category term="Settings" scheme="http://dev-dark-theme.codermarcos.com/categories/Settings/"/>
+    
+    
+      <category term="Personalization" scheme="http://dev-dark-theme.codermarcos.com/tags/Personalization/"/>
+    
+      <category term="Colors" scheme="http://dev-dark-theme.codermarcos.com/tags/Colors/"/>
+    
+      <category term="Settings" scheme="http://dev-dark-theme.codermarcos.com/tags/Settings/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Configuration</title>
+    <link href="http://dev-dark-theme.codermarcos.com/pt/Settings/configuration/"/>
+    <id>http://dev-dark-theme.codermarcos.com/pt/Settings/configuration/</id>
+    <published>2017-12-10T02:30:00.000Z</published>
+    <updated>2018-01-23T11:42:09.157Z</updated>
+    
+    <summary type="html">
+    
+      How to customise this theme
+    
+    </summary>
+    
+      <category term="Settings" scheme="http://dev-dark-theme.codermarcos.com/categories/Settings/"/>
+    
+    
+      <category term="Personalization" scheme="http://dev-dark-theme.codermarcos.com/tags/Personalization/"/>
+    
+      <category term="Colors" scheme="http://dev-dark-theme.codermarcos.com/tags/Colors/"/>
+    
+      <category term="Settings" scheme="http://dev-dark-theme.codermarcos.com/tags/Settings/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Using Dev Dark Theme</title>
+    <link href="http://dev-dark-theme.codermarcos.com/pt/HowTo/Using-Dev-Dark-Theme/"/>
+    <id>http://dev-dark-theme.codermarcos.com/pt/HowTo/Using-Dev-Dark-Theme/</id>
+    <published>2017-12-10T02:20:00.000Z</published>
+    <updated>2018-01-23T11:42:09.140Z</updated>
+    
+    <summary type="html">
+    
+      Tutorial make post, page or draft using Dev Dark Theme
+    
+    </summary>
+    
+      <category term="HowTo" scheme="http://dev-dark-theme.codermarcos.com/categories/HowTo/"/>
+    
+    
+      <category term="Informations" scheme="http://dev-dark-theme.codermarcos.com/tags/Informations/"/>
+    
+      <category term="Run" scheme="http://dev-dark-theme.codermarcos.com/tags/Run/"/>
+    
+      <category term="Using" scheme="http://dev-dark-theme.codermarcos.com/tags/Using/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Contact</title>
+    <link href="http://dev-dark-theme.codermarcos.com/pt/Theme/Contact/"/>
+    <id>http://dev-dark-theme.codermarcos.com/pt/Theme/Contact/</id>
+    <published>2017-12-10T02:10:00.000Z</published>
+    <updated>2018-01-10T13:50:37.166Z</updated>
+    
+    <summary type="html">
+    
+      My contacts to questions
+    
+    </summary>
+    
+      <category term="Theme" scheme="http://dev-dark-theme.codermarcos.com/categories/Theme/"/>
+    
+    
+      <category term="Informations" scheme="http://dev-dark-theme.codermarcos.com/tags/Informations/"/>
+    
+      <category term="Questions" scheme="http://dev-dark-theme.codermarcos.com/tags/Questions/"/>
+    
+      <category term="Doubt" scheme="http://dev-dark-theme.codermarcos.com/tags/Doubt/"/>
+    
+      <category term="Contact" scheme="http://dev-dark-theme.codermarcos.com/tags/Contact/"/>
+    
+  </entry>
+  
+</feed>
