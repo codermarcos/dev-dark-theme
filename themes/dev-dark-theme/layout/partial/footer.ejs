@@ -1,5 +1,18 @@
 <footer class="main-footer">
     <address class="social-icons">
+
+        <% if (config.feed.path) { %>
+        <a 
+            class="icon" 
+            target="_blank" 
+            title="rss" 
+            href="<%- config.feed.path %>">
+            <svg class="icon__svg">
+                <use xlink:href="#rss">
+            </svg>
+        </a>
+        <% } %>
+
         <% if (theme.github) { %>
         <a 
             class="icon" 

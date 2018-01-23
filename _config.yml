@@ -17,9 +17,19 @@ language: pt
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
+# RSS
+feed:
+  type: atom
+  path: 'atom.xml'
+  limit: 8
+  hub: 
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://dev-dark-theme.codermarcos.com
 root: /
 permalink: :lang/:category/:title/
 permalink_defaults: 
