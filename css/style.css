@@ -94,6 +94,7 @@ body {
 .main-header__title {
   font-size: 4.5em;
   font-weight: bold;
+  text-align: center;
 }
 
 .main-header__background {
@@ -175,15 +176,20 @@ body {
 .categories,
 .tags {
 	width: 100%;
-	height: 70px;
+  height: 150px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
+.categories.index,
+.tags.index {
+  height: 100px;
+}
+
 .categories__container, 
 .tags__container {
-	height: 65px;
+  height: 145px;
 	overflow-x: auto;
 	overflow-y: hidden;
 	width: 33.3%;
@@ -192,11 +198,17 @@ body {
 	align-items: center;
 }
 
+.categories__container.index,
+.tags__container.index {
+  height: 95px;
+}
+
 .categories__category,
 .tags__tag {
   background-color: var(--color_primaryAcent);
-  padding: 5px 10px;
+  padding: 15px;
   border-radius: 50px;
+  text-align: center;
 }
 .categories__category:hover,
 .tags__tag:hover {
@@ -245,22 +257,55 @@ body {
   opacity: 0.8;
 }
 @media screen and (max-width: 1280px) {
-  .posts-lasts__post {
+  .posts {
+    flex-basis: 60%;
+  }
+  .main-content__container,
+  .categories__container,
+  .tags__container {
     width: 60%;
   }
 }
-@media screen and (max-width: 720px) {
-  .posts-lasts__post {
+@media screen and (max-width: 1080px) {
+  .posts {
+    flex-basis: 75%;
+  }
+  .main-content__container,
+  .categories__container,
+  .tags__container {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .posts {
+    flex-basis: 85%;
+  }
+  .main-content__container,
+  .categories__container,
+  .tags__container {
     width: 85%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .main-header__title {
+    font-size: 10vw;
+  }
+  .posts__post__title {
+    font-size: 3.5vw;
+  }
+  .main-header__description {
+    margin: 0 10%;
+  }
+  .posts {
+    flex-basis: 90%;
+  }
+  .main-content__container,
+  .categories__container,
+  .tags__container {
+    width: 90%;
   }
   .divisor {
     margin: 20px 0;
-  }
-  .posts {
-    width: 100%;
-  }
-  .posts__container {
-    max-height: 25vh;
   }
 }
 
@@ -275,15 +320,10 @@ body {
     text-align: center;
   }
 }
+
 @media screen and (max-width: 360px) {
-  .main-header__title {
-    font-size: calc(2.5em - 0.3vw);
-  }
   .main-header__description {
     text-align: center;
-  }
-  .posts {
-    flex-basis: 90%;
   }
   .pagination {
     margin: 0;
@@ -291,7 +331,9 @@ body {
   .divisor {
     margin: 0;
   }
-  .categories__container, .tags__container {
+  .main-content__container,
+  .categories__container,
+  .tags__container {
     width: 90%;
   }
   .main-footer {
