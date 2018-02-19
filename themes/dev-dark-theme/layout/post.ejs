@@ -4,20 +4,5 @@
         class="main-content__container markdown" 
         itemprop="articleBody">
         <%- page.content %></div>
-
-    <% if (page.tags.length > 0) { %>        
-
-        <h5 class="divisor"><%= __('tags') %></h5>
-        <section class="tags">
-            <div class="tags__container">
-            <% page.tags.forEach((tag) => { %> 
-                <a 
-                    class="tags__tag" 
-                    href="/tags/<%- url_title(tag.name) %>"
-                    tilte="<%= __('tag') %>"><%- tag.name %></a>         
-            <% }) %>
-            </div>
-        </section>
-
-    <% } %>
+    <%- partial('partial/post/footer') %>
 </main>

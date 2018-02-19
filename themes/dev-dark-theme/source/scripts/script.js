@@ -17,6 +17,19 @@ window.app = () => {
 
     scrollY = window.scrollY;
   };
+
+  document.querySelectorAll('a[device-link]').forEach(element => {
+    const devices = JSON.parse(element.getAttribute('href'));
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      element.href = devices.mobile;
+    } else {
+      element.href = devices.desktop;
+    }
+  });
 };
 
 window.app();
