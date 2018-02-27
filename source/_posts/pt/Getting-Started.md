@@ -23,7 +23,7 @@ Next enter in repository to follow next steps
 ### Run
 To run local project use this
 ```shell
-hexo server
+hexo server --open
 ```
 Open your browser in http://localhost:4000
 
