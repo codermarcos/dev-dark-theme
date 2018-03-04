@@ -3,7 +3,7 @@ allowedFields: ["name", "email", "url", "message"]
 branch: "develop"
 commitMessage: "Add comment staticman"
 filename: "comment-{@date:YYYY-MM-DD}"
-format: "yml"
+format: "json"
 generatedFields:
   date: {options.date}
 moderation: true
