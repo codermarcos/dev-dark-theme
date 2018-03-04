@@ -2,10 +2,12 @@ comments:
 allowedFields: ["name", "email", "url", "message"]
 branch: "develop"
 commitMessage: "Add comment staticman"
-filename: "comment-{@date:YYYY-MM-DD}"
+filename: "comment-{@date:YYYY-MM-DD_HH-MM-SS}"
 format: "json"
 generatedFields:
   date: {options.date}
+  data: 
+    type: date
 moderation: true
 name: "frontend-weekly.codermarcos.com"
 path: "source/_data/comments/{options.lang}/{options.category}/{options.title}"

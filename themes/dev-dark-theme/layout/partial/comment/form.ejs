@@ -1,8 +1,9 @@
-<form method="POST" action="https://api.staticman.net/v2/entry/codermarcos/dev-dark-theme/develop">
+<form method="POST" action="https://api.staticman.net/v2/entry/<%- config.comments.username %>/<%- config.comments.repository %>/<%- config.comments.branch %>">
     <input id="date" name="options[date]" type="hidden" >
     <input name="options[lang]" type="hidden" value="<%- page.lang %>">
     <input name="options[title]" type="hidden" value="<%- url_title(page.title) %>">
     <input name="options[category]" type="hidden" value="<%- url_data(page.categories) %>">
+    <input name="options[redirect]" type="hidden" value="<%- config.url %>/<%- page.lang %>/<%- url_data(page.categories) %>/<%- url_title(page.title) %>/">
     <label>
         <input name="fields[name]" type="text">Name</label><br>    
     <label>
