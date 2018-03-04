@@ -26,7 +26,7 @@ comments:
   # with Mailgun, which you can get for free at http://mailgun.com.
   #notifications:
     # Enable notifications
-    enabled: true
+    # enabled: true
 
     # (!) ENCRYPTED
     #
