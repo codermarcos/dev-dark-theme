@@ -1,5 +1,4 @@
 <form method="POST" action="https://api.staticman.net/v2/entry/<%- config.comments.username %>/<%- config.comments.repository %>/<%- config.comments.branch %>">
-    <input id="date" name="fields[date]" type="hidden" >
     <input name="fields[lang]" type="hidden" value="<%- page.lang %>">
     <input name="fields[title]" type="hidden" value="<%- url_title(page.title) %>">
     <input name="fields[category]" type="hidden" value="<%- url_data(page.categories) %>">
@@ -13,5 +12,5 @@
     <label>
         <textarea name="fields[message]"></textarea>Message</label><br>
 
-    <button type="submit" onclick="document.getElementById('date').value = new Date()">Go!</button>
+    <button type="submit">Go!</button>
 </form>
