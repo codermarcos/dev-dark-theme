@@ -5,10 +5,10 @@ commitMessage: "Add comment staticman"
 filename: "comment-{@date:YYYY-MM-DD}"
 format: "yml"
 generatedFields:
-  date: "{options.date}"
+  date: {options.date}
 moderation: true
 name: "frontend-weekly.codermarcos.com"
-path: "source/_data/comments/{options.lang}/{options.category}"
+path: "source/_data/comments/{options.lang}/{options.category}/{options.title}"
 requiredFields: ["name", "email", "message"]
 transforms:
   email: md5
