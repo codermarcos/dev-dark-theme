@@ -11,6 +11,7 @@ comments:
   format: "json"
 
   generatedFields:
+    post: "{@date:YYYY-MM-DD}-{fields.title}"
     date:
       type: date
       options:
@@ -42,4 +43,4 @@ comments:
   requiredFields: ["name", "email", "message"]
 
   transforms:
-email: md5
+    email: md5
