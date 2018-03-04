@@ -1,4 +1,5 @@
 <form method="POST" action="https://api.staticman.net/v2/entry/codermarcos/dev-dark-theme/develop">
+    <input id="date" name="options[date]" type="hidden" >
     <input name="options[lang]" type="hidden" value="<%- page.lang %>">
     <input name="options[title]" type="hidden" value="<%- url_title(page.title) %>">
     <input name="options[category]" type="hidden" value="<%- url_data(page.categories) %>">
@@ -11,5 +12,5 @@
     <label>
         <textarea name="fields[message]"></textarea>Message</label><br>
 
-    <button type="submit">Go!</button>
+    <button type="submit" onclick="document.getElementById('date').value = new Date().toDateString()">Go!</button>
 </form>
