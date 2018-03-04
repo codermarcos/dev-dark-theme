@@ -1,5 +1,7 @@
 <form method="POST" action="https://api.staticman.net/v2/entry/codermarcos/dev-dark-theme/develop">
-    <input name="options[slug]" type="hidden" value="<%- page.lang %>-<%- url_data(page.categories) %>-<%- url_title(page.title) %>">
+    <input name="options[lang]" type="hidden" value="<%- page.lang %>">
+    <input name="options[title]" type="hidden" value="<%- url_title(page.title) %>">
+    <input name="options[category]" type="hidden" value="<%- url_data(page.categories) %>">
     <label>
         <input name="fields[name]" type="text">Name</label><br>    
     <label>
