@@ -1,11 +1,13 @@
-<form method="POST" action="https://api.staticman.net/v2/entry/codermarcos/dev-dark-theme/master">
+<form method="POST" action="https://api.staticman.net/v2/entry/codermarcos/dev-dark-theme/develop">
     <input name="options[slug]" type="hidden" value="<%- page.lang %>-<%- url_data(page.categories) %>-<%- url_title(page.title) %>">
     <label>
-        <input name="fields[name]" type="text">Name</label>
+        <input name="fields[name]" type="text">Name</label><br>    
     <label>
-        <input name="fields[email]" type="email">E-mail</label>
+        <input name="fields[email]" type="email">E-mail</label><br>
     <label>
-        <textarea name="fields[message]"></textarea>Message</label>
+        <input name="fields[url]" type="text">Url</label><br>
+    <label>
+        <textarea name="fields[message]"></textarea>Message</label><br>
 
     <button type="submit">Go!</button>
 </form>
