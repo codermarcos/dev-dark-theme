@@ -1,17 +1,17 @@
 comments:
-  allowedFields: ["name", "email", "url", "message"]
-  branch: "develop"
-  commitMessage: "Add comment staticman"
-  filename: "entry{@timestamp}"
-  format: "yml"
-  generatedFields:
-    date:
-      type: date
+allowedFields: ["name", "email", "url", "message"]
+branch: "develop"
+commitMessage: "Add comment staticman"
+filename: "entry{@timestamp}"
+format: "yml"
+generatedFields:
+  date:
+    type: date
       options:
         format: "timestamp-seconds"
-  moderation: true
-  name: "frontend-weekly.codermarcos.com"
-  path: "source/_data/comments/{options.slug}"
-  requiredFields: ["name", "email", "message"]
-  transforms:
-    email: md5
+moderation: true
+name: "frontend-weekly.codermarcos.com"
+path: "source/_data/comments/{options.slug}"
+requiredFields: ["name", "email", "message"]
+transforms:
+  email: md5
