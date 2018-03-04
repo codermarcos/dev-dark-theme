@@ -1,9 +1,9 @@
 comments:
   allowedFields: ["name", "email", "url", "message"]
-  branch: "master"
+  branch: "develop"
   commitMessage: "Add comment staticman"
-  filename: "comment-{@timestamp}"
-  format: "json"
+  filename: "entry{@timestamp}"
+  format: "yml"
   generatedFields:
     date:
       type: date
