@@ -257,6 +257,7 @@ body {
   fill: var(--color_primaryAcent);
   opacity: 0.8;
 }
+
 @media screen and (max-width: 1280px) {
   .posts {
     flex-basis: 60%;

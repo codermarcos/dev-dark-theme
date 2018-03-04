@@ -20,23 +20,6 @@ comments:
 
   name: "frontend-weekly.codermarcos.com"
 
-  # Notification settings. When enabled, users can choose to receive notifications
-  # via email when someone adds a reply or a new comment. This requires an account
-  # with Mailgun, which you can get for free at http://mailgun.com.
-  #notifications:
-    # Enable notifications
-    # enabled: true
-
-    # (!) ENCRYPTED
-    #
-    # Mailgun API key
-    #apiKey: "1q2w3e4r"
-
-    # (!) ENCRYPTED
-    #
-    # Mailgun domain (encrypted)
-    #domain: "4r3e2w1q"
-
   path: "source/_data/comments/{options.slug}"
 
   requiredFields: ["name", "email", "message"]
