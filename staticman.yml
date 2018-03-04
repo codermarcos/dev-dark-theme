@@ -7,8 +7,8 @@ format: "yml"
 generatedFields:
   date:
     type: date
-      options:
-        format: "timestamp-seconds"
+    options:
+      format: "timestamp-seconds"
 moderation: true
 name: "frontend-weekly.codermarcos.com"
 path: "source/_data/comments/{options.slug}"
