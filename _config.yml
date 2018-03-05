@@ -18,7 +18,10 @@ date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
 # Show comments
-comments: true
+comments:
+  show: true
+  moderation: true
+  fb_user_id: 100014732220660
 
 # RSS
 feed:
