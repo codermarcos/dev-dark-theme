@@ -1,7 +1,7 @@
 <%- partial('partial/category/header') %>
 <main class="main-content">
-    <section class="categories index">
-        <div class="categories__container index">
+    <section class="categories">
+        <div class="categories__container">
             <% site.categories.forEach((category) => { %> 
                 <a 
                     class="categories__category" 
@@ -15,8 +15,7 @@
             <%- partial('partial/post-item', { 
                 title: post.title, 
                 datetime: post.date, 
-                categories: 
-                post.categories, 
+                categories: post.categories, 
                 description: post.description, 
                 lang: post.lang 
             }) %>
