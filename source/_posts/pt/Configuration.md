@@ -19,6 +19,14 @@ author: # Name or Nickname of the site author
 language: # Your language
 ```
 
+If you want use comments configure with this lines, but if you prefer use [Facebook Docs](https://developers.facebook.com/tools/comments/) to customise comments
+```yml
+comments:
+  show: # true or false to show comments
+  moderation: # true or false will be moderation
+  fb_user_id: # user id of the moderator
+```
+
 And inner **themes** > **dev-dark-theme** > **config.yml** 
 ```yml
 # Miscellaneous
