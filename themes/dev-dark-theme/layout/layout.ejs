@@ -5,7 +5,10 @@
 <body itemscope itemprop="blogPost">
     <%- body %>
     <script src="scripts/script.min.js?__inline=true"></script>
-    <%- partial('partial/script-fb') %>
+    
+    <% if(is_post()) { %>
+        <%- partial('partial/script-fb') %> 
+    <% } %>    
     <%- partial('partial/analytics') %>
 </body>
 </html>
