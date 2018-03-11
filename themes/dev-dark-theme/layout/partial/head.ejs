@@ -24,6 +24,6 @@
     if (is_category()) title = page.category;
     %>
     <title><%- config.title %><% if (title) { %> | <%= title %><% } %></title>
-    
-    <%- css('css/style.min') %>
+
+    <link rel="stylesheet" href="css/style.min.css?__inline=true">
 </head>

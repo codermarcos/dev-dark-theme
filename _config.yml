@@ -30,6 +30,11 @@ comments:
   moderation: true
   fb_user_id: 100014732220660
 
+# Inline css
+inline_assets:
+  enabled: true
+  limit: 100000
+
 # RSS
 feed:
   type: atom
@@ -39,6 +44,22 @@ feed:
   content:
   content_limit: 140
   content_limit_delim: ' '
+
+# hexo-generator-amp
+# The following settings is the quick start options.
+
+generator_amp:
+  templateDir:  amp-template
+  assetDistDir: amp-dist
+  logo:
+    path:   sample/sample-logo.png
+    width:  600
+    height: 60
+  substituteTitleImage:
+    path:   sample/sample-substituteTitleImage.png
+    width:  1024
+    height: 800
+  warningLog: false   # To display warning, please set true.
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
