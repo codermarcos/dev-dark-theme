@@ -2,6 +2,7 @@
 title: Configuration
 lang: pt
 date: 2017-12-10 00:30:00
+updated: 2017-12-10 00:30:00
 description: How to customise this theme
 tags: [Personalization, Colors, Settings]
 categories:

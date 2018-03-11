@@ -17,6 +17,12 @@ language: pt
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
+sitemap:
+    path: sitemap.xml
+    template: ./sitemap_template.xml
+    tag: true
+    category: true
+
 # Show comments
 ## Docs: https://developers.facebook.com/tools/comments/
 comments:

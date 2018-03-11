@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">  
+  <url>
+    <loc>{{ config.url }}</loc>
+    <changefreq>weekly</changefreq>
+    <lastmod>{{ posts[posts.length - 1].updated.toISOString() }}</lastmod>    
+    <priority>1.00</priority>
+  </url>
+  {% for (let page = 0; page > posts.length; page++) %}
+  <url>
+    <loc></loc>
+    <lastmod>{{page}}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  {% endfor %}
+  {% for post in posts %}
+  <url>
+    <loc>{{ post.permalink | uriencode }}</loc>
+    <lastmod>{{ post.updated.toISOString() }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  {% endfor %}
+  {% for category in tags %}
+  <url>
+    <loc>{{ category.url }}/categories/{{category.name}}</loc>
+    <lastmod>{{ category.updated.toISOString() }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  {% endfor %}
+  {% for tag in tags %}
+  <url>
+    <loc>{{ tag.url }}/tags/{{tag.name}}</loc>
+    <lastmod>{{ tag.updated.toISOString() }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.40</priority>
+  </url>
+  {% endfor %}
+</urlset>

@@ -2,6 +2,7 @@
 title: About Theme
 lang: pt
 date: 2017-12-10 00:50:00
+updated: 2017-12-10 00:50:00
 description: Informations about this theme
 tags: [Informations, Questions, Doubt, Contact]
 categories: 

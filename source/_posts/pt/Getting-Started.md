@@ -2,6 +2,7 @@
 title: Getting Started
 lang: pt
 date: 2017-12-10 00:40:00
+updated: 2017-12-10 00:40:00
 description: Tutorial how to use this theme
 tags: [Installation, Run, Publish]
 categories: 
