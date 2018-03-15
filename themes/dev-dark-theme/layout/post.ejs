@@ -1,8 +1,19 @@
 <%- partial('partial/post/header') %>
 <main class="main-content">
     <div 
-        class="main-content__container markdown" 
-        itemprop="articleBody">
+        class="main-content__container markdown">
         <%- page.content %></div>
     <%- partial('partial/post/footer') %>
 </main>
+
+<%- partial('partial/seo/structured-data', { 
+    title: page.title, 
+    updated: page.updated, 
+    author: page.author, 
+    photo: page.photo,
+    lang: page.lang,
+    categories: page.categories,
+    contribuitor: page.contribuitor, 
+    published: page.date, 
+    description: page.description, 
+}) %>

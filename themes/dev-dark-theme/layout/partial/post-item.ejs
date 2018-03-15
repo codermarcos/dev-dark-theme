@@ -2,10 +2,9 @@
     <a 
         class="posts__post__title" 
         href="/<%- lang %>/<%- url_data(categories) %>/<%- url_title(title) %>"
-        itemprop="url"
         target="_blank"
         title="<%- description %>">
-        <h2 itemprop="name">
+        <h2>
             <%- title %></h2>
     </a>
     <a 
@@ -16,7 +15,6 @@
     <time 
         class="posts__post__day" 
         datetime="<%- date(datetime, 'YYYY-MM-DD') %>" 
-        title="<%= __('published') %> <%- date(datetime, 'D MMM YYYY') %>"
-        itemprop="datePublished">
+        title="<%= __('published') %> <%- date(datetime, 'D MMM YYYY') %>">
         <%- date(datetime, 'D MMM YYYY') %></time>
 </article>

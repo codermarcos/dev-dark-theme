@@ -3,8 +3,7 @@
     <div class="main-header__background"></div>
     <div class="main-header__container">        
         <h1 
-            class="main-header__title"  
-            itemprop="name">
+            class="main-header__title">
             <%- page.title %></h1>
         <p class="main-header__container__description">
             <a 
@@ -15,8 +14,7 @@
             <time 
                 class="description__day"  
                 datetime="<%- date(datetime, 'YYYY-MM-DD') %>" 
-                title="<%= __('published') %> <%- date(datetime, 'D MMM YYYY') %>"
-                itemprop="datePublished"><%- full_date(page.date, 'DD MMM YY HH[h] m[m]') %></time>        
+                title="<%= __('published') %> <%- date(datetime, 'D MMM YYYY') %>"><%- full_date(page.date, 'DD MMM YY HH[h] m[m]') %></time>        
         </p>
     </div>
 </header>

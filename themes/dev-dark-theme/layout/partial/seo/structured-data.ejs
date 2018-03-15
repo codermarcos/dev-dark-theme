@@ -1,0 +1,23 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "<%- config.url %>/<%- lang %>/<%- url_data(categories) %>/<%- url_title(title) %>"
+  },
+  "headline": "<%- title %>",
+  "image": ["<%- photo %>"],
+  "datePublished": "<%- published %>",
+  "dateModified": "<%- updated %>",
+  "author": {
+    "@type": "Person",
+    "name": "<%- author.name %>"
+    "email": "mailto:<%- author.email %>",
+    "image": "<%- author.photo %>",
+    "telephone": "<%- author.phone %>",
+    "jobTitle": "<%- author.job %>",
+  },
+  "description": "<%- description %>"
+}
+</script>

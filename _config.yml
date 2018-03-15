@@ -27,8 +27,7 @@ sitemap:
 ## Docs: https://developers.facebook.com/tools/comments/
 comments:
   show: true
-  moderation: true
-  fb_user_id: 100014732220660
+  script_discus: https://dev-dark-theme.disqus.com/embed.js
 
 # Inline css
 inline_assets:

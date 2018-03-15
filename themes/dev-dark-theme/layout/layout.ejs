@@ -2,12 +2,12 @@
 <html lang="<%- config.language %>">
 
 <%- partial('partial/head') %>
-<body itemscope itemprop="blogPost">
+<body>
     <%- body %>
     <script src="scripts/script.min.js?__inline=true"></script>
     
     <% if(is_post()) { %>
-        <%- partial('partial/script-fb') %> 
+        <%- partial('partial/script-comment') %> 
     <% } %>    
     <%- partial('partial/analytics') %>
 </body>
